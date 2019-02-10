@@ -1,0 +1,20 @@
+code title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: mediumpurple;
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.text-nav {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    text-align: center;
+}
