@@ -28,6 +28,7 @@ body {
 .text-blognav {
     font-family: 'Press Start 2P', cursive;
     color: black;
+    padding: 3px;
 }
 
 .text-blognav:hover {
