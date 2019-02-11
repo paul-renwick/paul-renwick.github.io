@@ -17,4 +17,10 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-weight: bold;
     text-align: center;
+    color: black;
+}
+
+.text-nav:hover {
+    color: white;
+    text-decoration: none;
 }
