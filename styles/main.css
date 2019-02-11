@@ -24,3 +24,19 @@ body {
     color: white;
     text-decoration: none;
 }
+
+.text-blognav {
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+}
+
+.text-blognav:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
