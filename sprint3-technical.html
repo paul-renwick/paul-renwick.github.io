@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paul's Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" style="background-color: black">
+          <img src="images/banner.png" class="img-fluid rounded mx-auto d-block" alt="Paul's Blog Banner">
+        </div>
+      </div>
+      <div class="row" style="background-color: #FF69B4" >
+        <div class="col-md-3 text-nav py-2">
+            <a href="index.html" class="text-nav">Bio</a>
+        </div>
+        <div class="col-md-3 text-nav py-2">
+            <a href="blog.html" class="text-nav">Blog</a>
+          </div>
+        <div class="col-md-3 text-nav py-2">
+            <a href="placeholder.html" class="text-nav">Placeholder</a>
+          </div>
+        <div class="col-md-3 text-nav py-2">
+            <a href="mailto:prenwick@gmail.com" class="text-nav">Contact</a>
+          </div>
+      </div>
+      <div class="row" style="background-color: white">
+      <div class="col-md-3 m-3" style="background-color: grey">
+        <p></p>
+        <ul>
+            Core Blogs
+            <li><a href="sprint1-cultural.html" class ="text-blognav">Identity, Value & Strengths</a></li>
+            <li><a href="sprint2-cultural.html" class ="text-blognav">Learning Plan</a></li>
+            <li><a href="sprint3-cultural.html" class ="text-blognav">Emotional Intelligence</a></li>
+            <p></p>
+            Technical Blogs
+            <li><a href="sprint3-technical.html" class ="text-blognav">Sprint 3 Technical</a></li>
+            <li><a href="margin.html" class ="text-blognav">Margin, Border & Padding</a></li>
+            <li><a href="classes.html" class ="text-blognav">Classes vs Ids</a></li>
+            <li><a href="relative.html" class ="text-blognav">Relative, Absolute & Fixed Positioning</a></li>
+            <li><a href="display.html" class ="text-blognav">Display Inline vs Inline Blocks</a></li>
+      </ul>
+      </div>
+      <div class="col-md-8 m-3">
+        <h4>Technical Blog 3:</h4>
+        <h5>An analogy to describe the differences between HTML and CSS</h5>
+        <p>I’ve stolen this analogy from <a href="https://generalassemb.ly/blog/website-is-like-a-house/">here</a>  but it serves the purpose of explaining HTML and CSS in an easily understandable way. If we consider a website to be like a house, then HTML is the frame from which the house is built, it gives us the structure that we can then stylize. If HTML was to provide us with the frame for a room, CSS would then be the paint on the walls, the thickness of the carpet, and the style of the windows.  </p>
+        <h5>Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'. </h5>
+        <p>Control flow refers to the order in which statements, functions or instructions are interpreted and executed by a program. An understanding of how control flow works is fundamental to building functioning websites. For example, if you were to link your JavaScript files at the top of an html document, before the body, then the JavaScript file would load before the contents of the body and would not be applied to the contents. For this reason, JavaScript needs to be at the end of the body, so that all of the structure can first be read by the browser and then the functionality will load afterwards and allow the page to function as intended. </p>
+        <p>A loop is a sequence of statements which continue to be carried out for either a set number of times, till a condition is met, or indefinitely. This may be useful in the case of counting, if say, you wanted a loading bar to show the percentage loaded on a webpage. The loop may run and display the percentage loaded until it reaches 100%, at which point the loop would then end.</p>
+        <p>Using everyday examples to illustrate control flow and loops, you may consider how you get dressed in the morning by the way of control flow. Typically, we dress ourselves in a particular order and not doing so results in questionable looks or unintended super hero costumes. For example a typical control flow of getting dressed would involve > underwear > pants > top > socks > shoes. Whereas if you went pants > top > underwear > shoes > socks the outcome would not be in accordance with typical fashion.  </p>
+        <p>To illustrate a loop, you can think of pouring yourself a coffee in the morning, if you had a fairly strong coffee, let’s say, 4 teaspoons, the loop would be, put one teaspoon of coffee in cup until you have reached 4 teaspoons, at which point, end the loop and move on to the next loop (sugar, hot water, milk, whatever). </p>
+        <h5>Describe what the DOM is and an example of how you might interact with it.</h5>
+        <p>The document object model (DOM) is a programming interface for HTML and XML documents. In plain language, a webpage contains an HTML document; this document can be displayed through either the browser window, through html code itself or through the DOM. The DOM represents the information on the page in such a way that it can be manipulated using languages such as JavaScript. In order to access and manipulate the DOM you can access it through most browsers, I’m going to assume you use Chrome and use that for my examples. Right clicking on a page and selecting the inspect element allows you to manipulate and view the DOM from the console. </p>
+        <h5>Explain the difference between accessing data from arrays and objects.</h5>
+        <p>An array is an object which can be used to store multiple values. In order to access information from an array you use the index number. Let’s say that I have array of mates [‘Ben’, ‘Huw’, ‘Steve’, ‘Hazel’], if I wanted to access Hazel from this array I would need to call on mates[3]. An Object contains multiple properties, for example, I might make an object called ben. To do this I would assign it as so: var ben = {age: “32”, location: “Dubai”, gender: “male”}; if I wanted to access data from this Ben object, I would type ben.location;</p>
+        <h5>Explain what functions are and why they are useful.</h5>
+        <p>Functions allow us to save actions or behaviours that we want the code to perform at a later time by calling upon them. This can be useful by giving us predefined tools to perform complex tasks. Let’s say I made an object with all my mates in it and all of their ages, bank account numbers and various other categories of inappropriate information. If I say, wanted to get a log of all of their phone numbers, rather than scouring through the object, I could write a function which does this for me. Functions can therefore be used to quickly perform complex tasks. </p>
+    </div>
+</div>
+<div class ="row">
+    <div class="col-md-12 py-2" style="text-align:center;background-color: #FF69B4">
+    A work in progress
+    </div>
+    </div>
+  </footer>    
+  </body>
+</html>
