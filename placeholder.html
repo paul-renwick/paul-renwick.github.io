@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
-    
     </head>
   <body>
     <div class="container-fluid">
@@ -25,7 +24,7 @@
             <a href="blog.html" class="text-nav">Blog</a>
           </div>
         <div class="col-md-3 text-nav py-2">
-            <a href="placeholder.html" class="text-nav">Placeholder</a>
+            <a href="placeholder.html" class="text-nav">Javascript Projects</a>
           </div>
         <div class="col-md-3 text-nav py-2">
             <a href="mailto:prenwick@gmail.com" class="text-nav">Contact</a>
@@ -33,7 +32,39 @@
       </div>
       <div class="row" style="background-color: white">
       <div class="col-md-4 p-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam atque ducimus dicta hic fugiat corporis, asperiores numquam ut, nobis iure repellendus repellat, aliquam nemo quo nesciunt magni! Debitis sed cupiditate voluptatibus. Impedit qui, dolorum quidem consequatur suscipit harum velit aliquam repellendus placeat unde, distinctio sapiente debitis! Quae dolore tempore nisi?
+        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:black">Weight Converter</h1>
+        <form>
+        <div class="form-group">
+          <input id ="kgsInput" type="number" class ="form-control form-control-lg" placeholder="Enter KGs..">
+        </div>
+      </form>
+      <div id="output">
+        <div class="card mb-2">
+        <div class="card-block">
+          <h4>Pounds:</h4>
+          <div id="poundsOutput">
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="output">
+          <div class="card mb-2">
+          <div class="card-block">
+            <h4>Grams:</h4>
+            <div id="gramsOutput">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="output">
+            <div class="card mb-2">
+            <div class="card-block">
+              <h4>Ounces:</h4>
+              <div id="ounceOutput">
+              </div>
+            </div>
+          </div>
+          </div>
       </div>
       <div class="col-md-4 p-5">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, atque excepturi dicta aliquid possimus, quia tempora quos quis vel asperiores delectus dolorum veniam magnam perferendis sunt, blanditiis aspernatur suscipit eos! Cum ipsa, magnam numquam veniam, sapiente quasi harum dolore consectetur inventore cumque commodi? Aliquam provident veniam unde repudiandae repellat inventore.
@@ -48,6 +79,13 @@
     A work in progress
   </div>
     </div>
-    
+    <script>
+      document.getElementById('kgsInput').addEventListener('input', function(e){
+        let kgs = e.target.value;
+        document.getElementById('poundsOutput').innerHTML = kgs*2.20462;
+        document.getElementById('gramsOutput').innerHTML = kgs*1000;
+        document.getElementById('ounceOutput').innerHTML = kgs*35.274;
+      });
+    </script>
   </body>
 </html>
